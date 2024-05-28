@@ -1,0 +1,55 @@
+
+/* Problem #1 */
+    /* Styling the Page */
+        /* Part A.  Make the page background the color: #e3f2fd  */
+        /* Part B.  Set the Font to Arial, sans-sherif */
+        /* Part C.  Make ALL H1 and H2's black with an alpha transpency of .85 */
+
+
+/* Problem #2 */
+    /* Styling the List */
+        /* Target the List of Product Categories Be sure you target 
+        just this list and not any other lists that may be added
+        to the page in the future */
+
+        /* Part A.  Add Space between the bullet and the Text of 20px */
+        /* Part B.  Have the bullets be empty circles (Not solid bullets) */
+
+/* Part 3 */
+    /* Styling the Table */
+        /* Target the Product Specifications Table */
+            /* Part A. Set the table width to 100% and ensure the borders between cells collapse */
+            /* Part B. Style all table headers (th elements) with a deep blue background (RGBA: 25, 118, 210, 0.9) and white text */
+            /* Part C. Style all table cells (td elements) with a border, padding of 8px, and left-aligned text */
+            /* Part D. Set the background color of every even row (nth-child even) in the table to a light grey (#f2f2f2) */
+
+/* Problem #4 */
+    /* Styling the Images */
+        /* Target the Product Images */
+            /* Part A. Set the width to 100% but do not exceed 300px */
+            /* Part B. Set a maximum height of 300px */
+            /* Part C. Add a 10px rounded corner border to each image */
+            /* Part D. Add a shadow effect with 0 2px 4px rgba(0,0,0,0.1) */
+            /* Part E. Ensure each image has a margin of 10px on the top and bottom */
+
+/* Problem #5 */
+    /* Interactive Elements */
+        /* Enhancing List Item Interactivity */
+            /* Part A. Make list items in the product categories list stand out with a background color of warm orange (RGBA: 255, 183, 77, 0.9) */
+            /* Part B. Add a hover effect that changes the background color to a deeper orange (RGBA: 255, 152, 0, 0.9) and lifts the item slightly with a translateY transformation of -5px */
+            /* Part C. Ensure transitions for background color and transformation are smooth (duration: 0.3s) */
+
+/* Problem #6 */
+    /* Advanced Styling with Animations and Gradients */
+        /* Applying Gradients and Animations */
+            /* Part A. Apply a gradient background to all H1 headers from dark grey to darker red using linear-gradient */
+            /* Part B. Apply a gradient background to all H2 headers from bright orange to bright green using linear-gradient */
+            /* Part C. Animate the H1 headers to change text color through a cycle of colors (red, blue, red) every 10 seconds */
+            /* Part D. Apply a continuous rotation animation to product images, making each complete a rotation every 20 seconds */
+
+/* Problem #7 */
+    /* Final Touches */
+        /* Refining the Visual Presentation */
+            /* Part A. Ensure all header elements (H1) have smooth color transitions over 0.3 seconds */
+            /* Part B. Add box-shadow to table to enhance depth */
+            /* Part C. Apply webkit-background-clip to text for gradient backgrounds on H1 and H2 */
