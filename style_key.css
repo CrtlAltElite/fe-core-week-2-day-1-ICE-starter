@@ -1,0 +1,106 @@
+/* Part 1: Styling the Page */
+/* Problem #1: Styling the Page */
+body {
+    background-color: #e3f2fd; /* Part A */
+    font-family: Arial, sans-serif; /* Part B */
+}
+
+h1, h2 {
+    color: rgba(0, 0, 0, 0.85); /* Part C */
+}
+
+/* Problem #2: Styling the List */
+ul.product-categories {
+    list-style-type: circle; /* Part B */
+    padding-left: 40px; /* Part A: Includes space for bullets */
+}
+
+/* Part 3: Styling the Table */
+/* Problem #3: Styling the Table */
+table.product-specifications {
+    width: 100%; /* Part A */
+    border-collapse: collapse; /* Part A */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2); /* Part D (Final Touches) */
+}
+
+table.product-specifications th {
+    background-color: rgba(25, 118, 210, 0.9); /* Part B */
+    color: white; /* Part B */
+    padding: 8px; /* Part C */
+    text-align: left; /* Part C */
+    border: 1px solid #ddd; /* Part C */
+}
+
+table.product-specifications td {
+    border: 1px solid #ddd; /* Part C */
+    padding: 8px; /* Part C */
+    text-align: left; /* Part C */
+}
+
+table.product-specifications tr:nth-child(even) {
+    background-color: #f2f2f2; /* Part D */
+}
+
+/* Problem #4: Styling the Images */
+img.product-image {
+    width: 100%; /* Part A */
+    max-width: 300px; /* Part A */
+    max-height: 300px; /* Part B */
+    border-radius: 10px; /* Part C */
+    border: 1px solid #ddd; /* Part C */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Part D */
+    margin: 10px 0; /* Part E */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Part E (hover effects) */
+}
+
+img.product-image:hover {
+    transform: scale(1.1); /* Part E (hover effects) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Part E (hover effects) */
+    animation: rotateImage 20s infinite linear; /* Part D (Advanced Styling) */
+}
+
+/* Problem #5: Interactive Elements */
+ul.product-categories li {
+    background-color: rgba(255, 183, 77, 0.9); /* Part A */
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out; /* Part C */
+}
+
+ul.product-categories li:hover {
+    background-color: rgba(255, 152, 0, 0.9); /* Part B */
+    transform: translateY(-5px); /* Part B */
+}
+
+/* Problem #6: Advanced Styling with Animations and Gradients */
+h1 {
+    background: linear-gradient(to right, rgba(66, 66, 66, 0.85), rgba(137, 4, 4, 0.85)); /* Part A */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    animation: changeTextColor 10s infinite; /* Part C */
+}
+
+h2 {
+    background: linear-gradient(to right, rgba(255, 87, 34, 0.9) 0%, rgba(15, 255, 7, 0.9) 20%); /* Part B */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+@keyframes rotateImage {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes changeTextColor {
+    0% { color: rgba(255, 87, 34, 0.9); }
+    50% { color: rgba(33, 150, 243, 0.9); }
+    100% { color: rgba(255, 87, 34, 0.9); }
+}
+
+/* Problem #7: Final Touches */
+h1, h2 {
+    transition: color 0.3s ease; /* Part A */
+}
+

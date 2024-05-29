@@ -1,0 +1,106 @@
+/* Part 1: Styling the Page */
+/* Problem #1: Styling the Page */
+body {
+    background-color: #e3f2fd; /* Sets the background color of the whole page to a light blue for a clean, fresh look. */
+    font-family: Arial, sans-serif; /* Sets the default font for the page to Arial, which is a sans-serif font, ensuring readability and a modern appearance. */
+}
+
+h1, h2 {
+    color: rgba(0, 0, 0, 0.85); /* Sets the color of all h1 and h2 elements to black with slight transparency, improving readability against the light background. */
+}
+
+/* Problem #2: Styling the List */
+ul.product-categories {
+    list-style-type: circle; /* Changes the list bullet style to circles (hollow) for a stylistic choice. */
+    padding-left: 40px; /* Adds padding to the left of the list to offset the text from the bullets, enhancing readability. */
+}
+
+/* Part 3: Styling the Table */
+/* Problem #3: Styling the Table */
+table.product-specifications {
+    width: 100%; /* Sets the table width to 100% of its container, utilizing available space. */
+    border-collapse: collapse; /* Collapses table borders into a single border to avoid double lines between cells, creating a cleaner look. */
+}
+
+table.product-specifications th {
+    background-color: rgba(25, 118, 210, 0.9); /* Sets a deep blue background for table headers for contrast against the text. */
+    color: white; /* Sets text color in the headers to white to ensure readability on the dark background. */
+    padding: 8px; /* Adds padding inside each header cell to space the text comfortably away from the cell edges. */
+    text-align: left; /* Aligns text to the left within header cells, following conventional table reading patterns. */
+    border: 1px solid #ddd; /* Adds a light grey border to each cell for subtle cell definition without heavy visual separation. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to headers to give a slightly raised effect for visual depth. */
+}
+
+table.product-specifications td {
+    border: 1px solid #ddd; /* Adds a light grey border around each cell, matching the headers for consistency. */
+    padding: 8px; /* Provides padding within each cell for text comfort and aesthetics. */
+    text-align: left; /* Ensures content in each table cell is left-aligned, maintaining uniform text alignment with headers. */
+}
+
+table.product-specifications tr:nth-child(even) {
+    background-color: #f2f2f2; /* Sets a light grey background for even rows, improving table readability through zebra-striping. */
+}
+
+/* Problem #4: Styling the Images */
+img.product-image {
+    width: 100%; /* Ensures the image takes up 100% of the width of its container, making the layout responsive. */
+    max-width: 300px; /* Limits image width to 300px to prevent overly large displays while maintaining aspect ratio. */
+    max-height: 300px; /* Limits image height to 300px for consistency and to maintain aspect ratio. */
+    border-radius: 10px; /* Rounds the corners of the images to 10px for a softer, more modern look. */
+    border: 1px solid #ddd; /* Adds a subtle grey border around images for slight separation from the background. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Applies a light shadow to give the image a raised effect, increasing visual interest. */
+    margin: 10px 0; /* Adds vertical spacing of 10px above and below the image to avoid crowding with other elements. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooths the transition effects for transform and box-shadow when interacting with the image. */
+}
+
+img.product-image:hover {
+    transform: scale(1.1); /* Enlarges the image to 110% of its size on hover for an interactive zoom effect. */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow size on hover to accentuate the lifting effect, adding depth. */
+    animation: rotateImage 20s infinite linear; /* Applies a continuous rotation animation, making the image rotate full 360 degrees every 20 seconds. */
+}
+
+/* Problem #5: Interactive Elements */
+ul.product-categories li {
+    background-color: rgba(255, 183, 77, 0.9); /* Sets a warm orange background for list items for visual appeal. */
+    margin: 5px 0; /* Adds top and bottom margins to separate items within the list slightly. */
+    padding: 5px 10px; /* Provides internal padding to keep text from the edges of the list item, enhancing readability. */
+    border-radius: 5px; /* Rounds the corners of list items to 5px for a consistent, modern look with the images. */
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out; /* Adds smooth transition effects for background color and transform properties. */
+}
+
+ul.product-categories li:hover {
+    background-color: rgba(255, 152, 0, 0.9); /* Changes the background color to a deeper orange on hover for an interactive visual cue. */
+    transform: translateY(-5px); /* Moves the list item up by 5px on hover, creating a subtle lifting effect. */
+}
+
+/* Problem #6: Advanced Styling with Animations and Gradients */
+h1 {
+    background: linear-gradient(to right, rgba(66, 66, 66, 0.85), rgba(137, 4, 4, 0.85)); /* Applies a gradient from dark grey to darker red to h1 headers for a striking visual effect. */
+    -webkit-background-clip: text; /* Clips the gradient background to the text itself, making the text transparent and filled with gradient. */
+    color: transparent; /* Makes the text transparent to allow the gradient background to show through. */
+    text-shadow: none; /* Removes any text shadow for a clean appearance. */
+    animation: changeTextColor 10s infinite; /* Applies an infinite text color-changing animation cycling every 10 seconds for dynamic visual interest. */
+}
+
+h2 {
+    background: linear-gradient(to right, rgba(255, 87, 34, 0.9), rgba(255, 193, 7, 0.9)); /* Sets a vibrant gradient from bright orange to bright yellow for h2 headers. */
+    -webkit-background-clip: text; /* Ensures the gradient is applied to the text, not the background, by clipping to the text. */
+    color: transparent; /* Makes h2 text transparent to allow the underlying gradient to be visible. */
+    text-shadow: none; /* Clears any text shadows for a sharper, more focused appearance. */
+}
+
+@keyframes rotateImage {
+    from { transform: rotate(0deg); } /* Starts the rotation at 0 degrees. */
+    to { transform: rotate(360deg); } /* Ends the rotation at 360 degrees, completing a full circle. */
+}
+
+@keyframes changeTextColor {
+    0% { color: rgba(255, 87, 34, 0.9); } /* Begins the cycle with a red color. */
+    50% { color: rgba(33, 150, 243, 0.9); } /* Changes to blue at the midpoint. */
+    100% { color: rgba(255, 87, 34, 0.9); } /* Returns to red at the end, repeating the cycle. */
+}
+
+/* Problem #7: Final Touches */
+h1, h2 {
+    transition: color 0.3s ease; /* Smooths out any abrupt changes in color to a gentle fade, enhancing the visual transition. */
+}
